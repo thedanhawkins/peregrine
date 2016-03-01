@@ -31,7 +31,7 @@ I recommend MAMP Pro for this, you should get a 30 day free trial when you downl
 ###5. Preview in your browser
 If you set up MAMP and the virtual host correctly you should now be able to enter the name of the host in to your browser and see this page:
 
-![Peregrine Welcome Page](http://imgur.com/RYaj3kU "Peregrine Welcome Page")
+![Peregrine Welcome Page](http://i.imgur.com/RYaj3kU.png "Peregrine Welcome Page")
 
 **Congrats! You've installed Peregrine!**
 Enjoy making websites with it.
