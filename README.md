@@ -44,7 +44,7 @@ Everything you create for your project should be placed in `/assets`. There is s
 * **Markup** - *html, php, whatever you fancy. This will get copied in to the root of your distributable project by Gulp*
 * **Images** - *compressed and moved in to the distributable project by Gulp*
 * **Stylesheets** - *all controlled via* `main.scss`*. This all gets concatenated and minified by Gulp*
-* **Javascripts** - *you'll find* `app.js` *and* `helpers.js`* for your custom js and folders for vendor and extra js. Custom and vendor js gets concatenated and uglified by Gulp*
+* **Javascripts** - *you'll find* `app.js` *and* `helpers.js` *for your custom js and folders for vendor and extra js. Custom and vendor js gets concatenated and uglified by Gulp*
 * **Fonts** - *place your font files here and they will get moved over to the distributable project by Gulp*
 
 ## Gulp tasks
