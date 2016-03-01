@@ -21,33 +21,16 @@
             
         </header>
         <main class="site-content">
-            <h1 class="xxlarge-text-center">Hello world!</h1>
-            <ul class="accordion" data-accordion role="tablist">
-              <li class="accordion-item is-active">
-                <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
-                <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-                  Panel 1. Lorem ipsum dolor
+            <section class="row">
+                <div class="small-12 colum">
+                    <h1>Welcome to Peregrine!</h1>
                 </div>
-              </li>
-              <li class="accordion-item">
-                <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
-                <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-                  Panel 2. Lorem ipsum dolor
+            </section>
+            <section class="row">
+                <div class="small-12 medium-4 colum">
+                    <img src="http://www.audubon.org/sites/default/files/styles/wysiwyg_slide/public/sfw_66v8930_0.jpg?itok=tRoYAOE9" alt="Kickass Peregrine Falcon">
                 </div>
-              </li>
-              <li class="accordion-item">
-                <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
-                <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-                  Panel 3. Lorem ipsum dolor sit amet!
-                </div>
-              </li>
-            </ul>
+            </section>
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/javascripts/foundation.min.js"></script>
