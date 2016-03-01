@@ -1,6 +1,8 @@
 # Peregrine
 The Peregrine Falcon is the fastest member of the animal kingdom, https://en.wikipedia.org/wiki/Peregrine_falcon. Let's nick some of that speed for our web projects.
 
+Peregrine is a starting point for your web development projects. It uses [Zurb's Foundation Framework](http://foundation.zurb.com) and [Gulp](http://gulpjs.com) to speed up your workflow. Use it create whatever you desire - websites, wordpress themes, web apps and more.
+
 ![Kickass Peregrine Falcon](http://www.audubon.org/sites/default/files/styles/wysiwyg_slide/public/sfw_66v8930_0.jpg?itok=tRoYAOE9 "Kickass Peregrine Falcon")
 Photo: [Luke Massey](http://www.lmasseyimages.com/)
 ##Installation
