@@ -71,7 +71,7 @@ gulp.task('rev', function () {
 });
 
 
-// When working on the package for the first time, gulp build should be run. The deafault task can then be used for development. 
+// When working on the package for the first time, gulp build should be run. The default task can then be used for development. 
 gulp.task('build', function(callback) {
    runSequence('clean', ['markup', 'styles', 'scripts', 'extra-scripts', 'images', 'fonts'], 'rev', callback);
 });
