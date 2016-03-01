@@ -20,7 +20,7 @@ gulp.task('styles', function() {
     return gulp.src(['assets/stylesheets/vendor/*', 'assets/stylesheets/main.scss'])
     .pipe(plugins.sass({ style: 'expanded', includePaths: ['node_modules/foundation-sites/scss/'] }))
     .pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-    .pipe(plugins.minifyCss())
+    .pipe(plugins.cleanCss())
     .pipe(plugins.concat('main.css'))
     .pipe(plugins.rev())
     .pipe(gulp.dest('dist/'+projectName+'/assets/stylesheets'))
