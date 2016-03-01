@@ -1,0 +1,42 @@
+# Block Russian Referrer Spam
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly.\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.info/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*iloveitaly\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*econom\.co/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*savetubevideo\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*kambasoft\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*darodar\.com/ [NC]
+RewriteRule ^(.*)$ – [F,L]
+
+# Remove html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)/$ $1.html
+
+# Remove php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)/$ $1.php
+
+# Set expiry headers for css and js
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+</IfModule>
+
+# Enable gzip compression
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
